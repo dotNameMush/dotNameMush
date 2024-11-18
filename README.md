@@ -10,9 +10,7 @@
   <a href="https://www.youtube.com/@ByteSizedCP" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="youtube logo"  />
   </a>
-  <a href="mailto:mungunshagaibayarkhuu@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=mungunshagaibayarkhuu@gmail.com&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
-  </a>
+
   <a href="https://www.facebook.com/munguunuu27/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="facebook logo"  />
   </a>
@@ -20,6 +18,8 @@
     <img src="https://img.shields.io/static/v1?message=@dev_munguu&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="instagram logo"  />
   </a>
 </div>
+<h5 align="center">mungunshagaibayarkhuu@gmail.com</h5>
+
 
 ###
 
