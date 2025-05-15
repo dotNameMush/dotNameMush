@@ -37,7 +37,7 @@
 
 ###
 
-<p align="left">I'm A software engineer specializing in full-stack development from Mongolia.<br><br> I build scalable web applications with modern technologies<br><br>- 🔭 I’m working as Senior engineer @SYXL<br>- 📚 I'm currently learning devOps<br>- ⚡ In my free time I work on my side projects and watch Anime</p>
+<p align="left">I'm A software engineer specializing in full-stack development from Mongolia.<br><br> I build scalable web applications with modern technologies<br><br>- 🔭 I’m working as Senior engineer @SYXL<br>- 📚 I'm currently learning devOps</p>
 
 ###
 
