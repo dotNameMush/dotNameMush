@@ -42,7 +42,7 @@
   "message": "returnType is missing.",
   "path": "/api/invoice"
 }
-
+```
 
 ```json
 {
@@ -52,7 +52,7 @@
   "message": "Payment not found",
   "path": "/api/inquiry"
 }
-
+```
 
 ```json
 {
@@ -62,7 +62,7 @@
   "message": "SQL exception",
   "path": "/api/pay"
 }
-
+```
 
 ```json
 {
@@ -72,6 +72,7 @@
   "message": "Access Denied",
   "path": "/api/pay"
 }
+```
 
 
     
