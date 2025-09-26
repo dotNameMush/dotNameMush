@@ -19,7 +19,8 @@ sequenceDiagram
     Customer-->>Merchant: 7. Redirect to merchant
     Merchant->>Bank: 8. Check request
     Bank-->>Merchant: Transaction status
-```
+
+    
 ###
 
 <div align="center">
