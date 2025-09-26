@@ -4,7 +4,68 @@
   <img height="150" src="https://avatars.githubusercontent.com/u/74607573?v=4"  />
 </div>
 
+# General API Information
 
+## Request
+- **Protocol:** `HTTP`  
+- **Method:** `POST` (only)  
+- **Content-Type:** `application/json`  
+- **Authorization:** Bearer token  
+  - `token`: Received from bank after signing the merchant contract  
+
+## Response
+| Status | Description |
+|-------|-------------|
+| **200** | Successful — a JSON-formatted value of the function is received |
+| **400** | Bad request — did not meet the requirements for the function call |
+| **403** | Blank value returned if header authorization is missing/incorrect or token is blank |
+| **500** | System error |
+
+### Error Response Fields (400 and 500)
+| Parameter | Type | Definition |
+|----------|------|------------|
+| `timestamp` | String | Date of action |
+| `status` | Integer | Error type value (`400`, `403`, `500`) |
+| `error` | String | Error type description — possible values: `Validation`, `NotFound`, `Internal`, `Forbidden` |
+| `message` | String | Error details |
+| `path` | String | Path of the called function |
+
+### Example Error Responses
+```json
+{
+  "timestamp": "2020-06-02T10:51:56.359+0000",
+  "status": 400,
+  "error": "Validation",
+  "message": "returnType is missing.",
+  "path": "/api/invoice"
+}
+```
+```json
+{
+  "timestamp": "2020-06-02T10:51:56.359+0000",
+  "status": 400,
+  "error": "NotFound",
+  "message": "Payment not found",
+  "path": "/api/inquiry"
+}
+```
+```json
+{
+  "timestamp": "2020-06-02T10:51:56.359+0000",
+  "status": 500,
+  "error": "Internal",
+  "message": "SQL exception",
+  "path": "/api/pay"
+}
+```
+```json
+{
+  "timestamp": "2020-06-02T10:51:56.359+0000",
+  "status": 403,
+  "error": "Forbidden",
+  "message": "Access Denied",
+  "path": "/api/pay"
+}
     
 ###
 
