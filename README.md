@@ -3,26 +3,7 @@
 <div align="center">
   <img height="150" src="https://avatars.githubusercontent.com/u/74607573?v=4"  />
 </div>
-```mermaid
-sequenceDiagram
 
-    participant Customer as Customer (Browser)
-    participant Merchant as Merchant
-    participant GolomtAPI as Golomt API
-    participant CardSys as Golomt Bank Card System
-
-    Customer->>Merchant: 1. Transaction request (merchant page)
-    Merchant->>GolomtAPI: 2. Invoice request (order & amount)
-    GolomtAPI-->>Merchant: 2. Invoice number
-    Merchant-->>Customer: 3. Open Golomt bank card page (redirect with invoice)
-    Customer->>GolomtAPI: 4. Submit card info / Make transaction
-    GolomtAPI->>CardSys: 4a. Check card information
-    CardSys-->>GolomtAPI: 4b. Transaction processed / auth result
-    GolomtAPI-->>Merchant: 5. Push notification (transaction info)
-    GolomtAPI-->>Customer: 6. Return transaction response (success/fail)
-    Customer-->>Merchant: 7. Redirect back to merchant (with response)
-    Merchant->>GolomtAPI: 8. Check request (confirm transaction)
-    GolomtAPI-->>Merchant: 8. Transaction status (final)
 
     
 ###
